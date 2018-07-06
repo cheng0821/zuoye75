@@ -1,29 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-html,body{
+
+html,
+body {
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
-.wrap{
+
+.wrap {
     width: 100%;
     height: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-.header,.footer{
+
+.header,
+.footer {
     width: 100%;
     height: 3rem;
     background: pink;
-    text-align: center;
 }
-.content{
+
+.content {
     width: 100%;
     flex: 1;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer ul li:hover {
+    color: red;
 }
