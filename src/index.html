@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,26 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./style/style.css">
+<script>
+    document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+</script>
+
 <body>
     <div class="wrap">
         <div class="header">
-            头部
+            <p>全场包邮 低至5元</p>
+            <div class="nav">
+                <ul>
+                    <li>推荐</li>
+                    <li>女装</li>
+                    <li>美食</li>
+                    <li>居家</li>
+                    <li>美妆个户</li>
+                    <li>男装</li>
+                    <li>内衣</li>
+                    <li>鞋子</li>
+                </ul>
+            </div>
         </div>
         <div class="content">
             内容
@@ -19,5 +36,14 @@
             底部
         </div>
     </div>
+    <script src="js/Bscroll.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script>
+        $('ul').width((8 * 140) / 100 + 'rem');
+        var newBscroll = new BScroll('.nav', {
+            scrollX: true
+        });
+    </script>
 </body>
+
 </html>
